@@ -1,16 +1,16 @@
 object Form1: TForm1
-  Left = 45
-  Top = 139
+  Left = 276
+  Top = 144
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'JPG+RAR'#25209#37327#21512#24182#22120' V1.3'
+  Caption = 'JPG&RAR Combine Tool'
   ClientHeight = 325
   ClientWidth = 649
   Color = clBtnFace
   Font.Charset = GB2312_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = #23435#20307
+  Font.Name = '@'#206#162#200#237#209#197#186#218
   Font.Style = []
   Icon.Data = {
     0000010010004040100001000400680A00000601000030301000010004006806
@@ -3515,29 +3515,29 @@ object Form1: TForm1
   OnClose = FormClose
   OnCreate = FormCreate
   PixelsPerInch = 96
-  TextHeight = 11
+  TextHeight = 16
   object GroupBox1: TGroupBox
     Left = 16
     Top = 16
     Width = 297
-    Height = 233
-    Caption = #22270#29255#21015#34920'(.jpg)'
-    Font.Charset = GB2312_CHARSET
+    Height = 169
+    Caption = 'Image Files (.jpg)'
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
-    Font.Name = #23435#20307
+    Font.Name = '@'#206#162#200#237#209#197#186#218
     Font.Style = []
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 6
     object ListBox1: TListBox
       Left = 8
       Top = 16
       Width = 281
-      Height = 185
+      Height = 137
       BorderStyle = bsNone
       Color = clBtnFace
       Ctl3D = True
-      ItemHeight = 11
+      ItemHeight = 16
       MultiSelect = True
       ParentCtl3D = False
       TabOrder = 0
@@ -3547,35 +3547,41 @@ object Form1: TForm1
     Left = 328
     Top = 16
     Width = 305
-    Height = 233
-    Caption = #21387#32553#25991#20214#21015#34920'(.rar|.zip)'
+    Height = 273
+    Caption = 'Zip Files (.rar|.zip)'
     Font.Charset = GB2312_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
-    Font.Name = #23435#20307
+    Font.Name = '@'#206#162#200#237#209#197#186#218
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 7
     object ListBox2: TListBox
       Left = 8
       Top = 16
       Width = 281
-      Height = 185
+      Height = 249
       BorderStyle = bsNone
       Color = clBtnFace
       Ctl3D = True
-      ItemHeight = 11
+      ItemHeight = 16
       MultiSelect = True
       ParentCtl3D = False
       TabOrder = 0
     end
   end
   object Button3: TButton
-    Left = 273
-    Top = 266
+    Left = 233
+    Top = 218
     Width = 75
     Height = 25
-    Caption = #21512#24182
+    Caption = 'Combine'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Narrow'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
     OnClick = Button3Click
   end
@@ -3587,7 +3593,7 @@ object Form1: TForm1
     Font.Charset = GB2312_CHARSET
     Font.Color = clGray
     Font.Height = -11
-    Font.Name = #23435#20307
+    Font.Name = '??'
     Font.Style = []
     Panels = <
       item
@@ -3612,46 +3618,82 @@ object Form1: TForm1
     Height = 33
     Smooth = True
     Step = 2
-    TabOrder = 7
+    TabOrder = 9
     Visible = False
   end
-  object Button1: TButton
-    Left = 229
-    Top = 218
+  object Button4: TButton
+    Left = 127
+    Top = 258
     Width = 75
     Height = 25
-    Caption = #36873#25321#22270#29255
-    Default = True
-    Font.Charset = GB2312_CHARSET
+    Caption = 'Check New'
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
-    Font.Name = #23435#20307
+    Font.Name = 'Arial Narrow'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button6: TButton
+    Left = 232
+    Top = 258
+    Width = 75
+    Height = 25
+    Caption = 'Exit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Narrow'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button6Click
+  end
+  object Button1: TButton
+    Left = 21
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'Select Pic'
+    Default = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial Narrow'
     Font.Style = []
     ParentFont = False
     TabOrder = 0
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 551
-    Top = 218
+    Left = 127
+    Top = 216
     Width = 75
     Height = 25
-    Caption = #36873#25321#21387#32553#25991#20214
-    Font.Charset = GB2312_CHARSET
+    Caption = 'Secect Zip'
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
-    Font.Name = #23435#20307
+    Font.Name = 'Arial Narrow'
     Font.Style = []
     ParentFont = False
     TabOrder = 1
     OnClick = Button2Click
   end
   object Button5: TButton
-    Left = 382
-    Top = 266
+    Left = 22
+    Top = 258
     Width = 75
     Height = 25
-    Caption = #36719#20214#35828#26126
+    Caption = 'Instructions'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     OnClick = Button5Click
   end

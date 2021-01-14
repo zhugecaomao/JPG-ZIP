@@ -90,7 +90,7 @@ MaxStackSize=1048576
 ImageBase=4194304
 ExeDescription=
 [Directories]
-OutputDir=
+OutputDir=..\..\JPG&RAR Combine Tool
 UnitOutputDir=
 PackageDLLOutputDir=
 PackageDCPOutputDir=
@@ -105,6 +105,10 @@ HostApplication=
 Launcher=
 UseLauncher=0
 DebugCWD=
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
 [Version Info]
 IncludeVerInfo=1
 AutoIncBuild=0

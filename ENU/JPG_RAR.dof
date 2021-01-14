@@ -90,7 +90,7 @@ MaxStackSize=1048576
 ImageBase=4194304
 ExeDescription=
 [Directories]
-OutputDir=
+OutputDir=..\..\JPG&RAR Combine Tool
 UnitOutputDir=
 PackageDLLOutputDir=
 PackageDCPOutputDir=
@@ -105,15 +105,9 @@ HostApplication=
 Launcher=
 UseLauncher=0
 DebugCWD=
-[Resource DLL Projects]
-Item0=Chinese (Simplified, PRC)*$00000804*CHS*CHS
-Item1=English (United States)*$00000409*ENU*ENU
-[RDP Source Files]
-Item0=Forms\Unit1.dfm
-Item1=JPG_RAR.drc
 [Language]
 ActiveLang=
-ProjectLang=$00000804
+ProjectLang=
 RootDir=
 [Version Info]
 IncludeVerInfo=1
@@ -127,14 +121,14 @@ PreRelease=0
 Special=0
 Private=0
 DLL=0
-Locale=2052
-CodePage=936
+Locale=1033
+CodePage=1252
 [Version Info Keys]
-CompanyName=???????
-FileDescription=JPG+RAR?????
+CompanyName=诸葛草帽工作室
+FileDescription=JPG+RAR批量合并器
 FileVersion=1.2.0.0
 InternalName=JPG_RAR
-LegalCopyright=???? ????
+LegalCopyright=诸葛草帽 版权所有
 LegalTrademarks=
 OriginalFilename=
 ProductName=

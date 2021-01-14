@@ -1,6 +1,7 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{ae8d7e95-8e24-42fc-b373-a3505e221b71}</ProjectGuid>
+    <ProjectGuid>{cb6674f3-60d1-43ca-ae78-511c01fe4f68}</ProjectGuid>
     <MainSource>JPG_RAR.dpr</MainSource>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -16,17 +17,20 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <Version>7.0</Version>
-    <DCC_Define>DEBUG</DCC_Define>
   </PropertyGroup>
   <ProjectExtensions>
     <Borland.Personality>Delphi.Personality</Borland.Personality>
     <Borland.ProjectType>VCLApplication</Borland.ProjectType>
     <BorlandProject>
-<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+<BorlandProject> <Delphi.Personality>   <Parameters>
       <Parameters Name="UseLauncher">False</Parameters>
       <Parameters Name="LoadAllSymbols">True</Parameters>
       <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
     </Parameters>
+    
+    <Language>
+      <Language Name="ProjectLang">$00000804</Language>
+    </Language>
     <VersionInfo>
       <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
       <VersionInfo Name="AutoIncBuild">False</VersionInfo>
@@ -43,20 +47,26 @@
       <VersionInfo Name="CodePage">936</VersionInfo>
     </VersionInfo>
     <VersionInfoKeys>
-      <VersionInfoKeys Name="CompanyName">诸葛草帽工作室</VersionInfoKeys>
-      <VersionInfoKeys Name="FileDescription">JPG+RAR批量合并器</VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">???????</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">JPG+RAR?????</VersionInfoKeys>
       <VersionInfoKeys Name="FileVersion">1.2.0.0</VersionInfoKeys>
       <VersionInfoKeys Name="InternalName">JPG_RAR</VersionInfoKeys>
-      <VersionInfoKeys Name="LegalCopyright">诸葛草帽 版权所有</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright">???? ????</VersionInfoKeys>
       <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
       <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
       <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
       <VersionInfoKeys Name="ProductVersion">1.2.0.0</VersionInfoKeys>
       <VersionInfoKeys Name="Comments"></VersionInfoKeys>
     </VersionInfoKeys>
+    
     <Source>
       <Source Name="MainSource">JPG_RAR.dpr</Source>
     </Source>
+    
+    <RDP_Source_Files>
+      <RDP_Source_Files Name="Item0">Forms\Unit1.dfm</RDP_Source_Files>
+      <RDP_Source_Files Name="Item1">JPG_RAR.drc</RDP_Source_Files>
+    </RDP_Source_Files>
   </Delphi.Personality> </BorlandProject></BorlandProject>
   </ProjectExtensions>
   <ItemGroup />
